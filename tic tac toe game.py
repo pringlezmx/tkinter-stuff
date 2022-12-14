@@ -6,7 +6,7 @@ found = False
 foundD = False
 boxes = ["i"]*9
 count = 0
-'''maybe tell which playes go it is on the screen'''
+
 #win
 def retur():
     Label(boxS, text = winner+" won",font = ("Arial",16))\
@@ -45,8 +45,6 @@ show.resizable(False,False)
 show.withdraw()
 boxS = Frame(show)
 boxS.pack()
-#Label(boxS, text = winner+" won",font = ("Arial",16))\
-           #.grid(row = 0, column = 0, padx = 10, pady = 10)
 
 buttonS = Button(show,text = "Close", width = 7,command = lambda:[show.destroy()])
 buttonS.pack()
@@ -188,8 +186,7 @@ def change9():
         Label(box9,text="o",font = ("Arial",140)).grid(row=0,column=0,padx =110,pady =30)
         boxes[8] = "o"
         player = "x"
-''' make it so it can see if there is three in a row or if every place has a letter in it to end the game,
-the first tic tac toe has some code fo checking 3 in a row'''
+
 #check winner
 def check():
     global found, winner, count, foundD
@@ -256,7 +253,7 @@ def check():
         time.sleep(3)
         root.withdraw()
         retur()
-#https://stackoverflow.com/questions/459083/how-do-you-run-your-own-code-alongside-tkinters-event-loop
+
 button1 = Button(root, text = "submit", width = 7, command = lambda:[change1(),button1.destroy(),check()])
 button1.grid(row = 0, column = 0, padx = 0, pady = 5)
 button2 = Button(root, text = "submit", width = 7, command = lambda:[change2(),button2.destroy(),check()])
@@ -277,4 +274,4 @@ button9 = Button(root, text = "submit", width = 7, command = lambda:[change9(),b
 button9.grid(row = 2, column = 2, padx = 0, pady = 5)
 
 
-#while loop, stop loop when 3 in a row happens and close the program and show an end screen(who won)
+
