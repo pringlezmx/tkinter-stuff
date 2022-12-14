@@ -1,4 +1,4 @@
-'''from tkinter import*
+from tkinter import*
 def sumbit():
     print("username",username.get())#gets the user input from the entry box and outputs it
     print("firstname",firstname.get())
@@ -47,21 +47,5 @@ clear_button = Button(root, text ="clear", width = 7, command = clear)
 clear_button.grid(row =2 , column = 1, padx = 0, pady = 5)
 
 
-
-root.mainloop()'''
-from tkinter import *
-root = Tk()
-root.geometry("500x500+0+0")
-frmMain = Frame(root,bg="blue")
-
-startbutton = Button(frmMain, text="Start",height=1,width=4)
-startbutton.grid()
-
-#Configure the row/col of our frame and root window to be resizable and fill all available space
-frmMain.grid(row=0, column=0, sticky="NESW")
-frmMain.grid_rowconfigure(0, weight=1)
-frmMain.grid_columnconfigure(0, weight=1)
-root.grid_rowconfigure(0, weight=1)
-root.grid_columnconfigure(0, weight=1)
 
 root.mainloop()
