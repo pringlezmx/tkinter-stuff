@@ -12,8 +12,3 @@ label1 = Label(cal,text = text, font = "consolas 10 bold")
 label1.grid(row=2,column=1,padx=20)
 cal.mainloop()
 
-
-
-
-#video https://www.youtube.com/watch?v=dvg63slNFto
-#https://www.tutorialbrain.com/python-calendar/
