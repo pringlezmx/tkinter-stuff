@@ -37,4 +37,3 @@ for lang in words:
 # Execute Tkinter
 root.mainloop()
 
-#https://www.geeksforgeeks.org/looping-through-buttons-in-tkinter/
